@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 
 <body>
 
-    <Div class="container">
+    <div class="container">
 
         <nav class="sidebar">
             <div class="nav-logo">
@@ -22,7 +22,6 @@
                     <i class="fa-solid fa-book"></i>
                     <p>Sua Biblioteca +</p>
                 </div>
-                
             </div>
             <div class="nav-playlist">
                 <h5>Crie Sua Primeira Playlist</h5>
@@ -31,7 +30,7 @@
             </div>
             <div class="nav-podcast">
                 <h5>Que tal Seguir um Podcast?</h5>
-                <p>Avisaremos você sobre nossos épisódios</p>
+                <p>Avisaremos você sobre nossos episódios</p>
                 <button>Explore Podcast</button>
             </div>
             <div class="nav-footer">
@@ -50,23 +49,32 @@
 
         <main>
             <header>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input placeholder="Oque você quer ouvir?">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="O que você quer ouvir?">
+                </div>
             </header>
             <section class="content">
                 <h2>Artistas Populares</h2>
-                <!-- inserir dados com javascript -->
                 <div class="artists-grid"></div>
-                <!-- inserir dados com javascript -->
-                <h2>Álbus Populares</h2>
+
+                <h2>Singles e álbums que todo mundo gosta</h2>
                 <div class="albums-grid"></div>
             </section>
         </main>
 
-    </Div>
+    </div>
+
+    <div class="banner">
+        <div>
+            <h2>Testar o Premium de graça</h2>
+            <p>Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns anúncios. Não precisa de um cartão de crédito.</p>
+        </div>
+        <button>Inscreva-se Grátis</button>
+    </div>
+
+    <script src="./scripts.js"></script>
 
 </body>
-
-<script src="./scripts.js"></script>
 
 </html>
