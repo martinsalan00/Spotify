@@ -66,6 +66,11 @@ body {
     border-radius: 20px;
 }
 
+.nav-playlist button:hover, .nav-podcast button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 .nav-footer {
     margin-top: auto;
 }
@@ -226,17 +231,5 @@ main {
     }
     .artists-grid, .albums-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    }
-}
-
-@media (max-width: 350px) {
-    .search-bar input {
-        max-width: 80%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 5px;
-        margin-left: 5px;
     }
 }
