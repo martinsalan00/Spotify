@@ -99,9 +99,9 @@ main {
     display: flex;
     align-items: center;
     background-color: #242424;
-    padding: 5px 12px;
+    padding: 5px 10px;
     border-radius: 20px;
-    width: 230px;
+    width: 220px;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -119,10 +119,11 @@ main {
 }
 
 .artists-grid, .albums-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    display: flex;
     gap: 24px;
-    margin-bottom: 40px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
 }
 
 .artist-card, .album-card {
@@ -135,6 +136,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    min-width: 180px;
 }
 
 .artist-card:hover, .album-card:hover {
@@ -143,9 +145,10 @@ main {
 
 .artist-card img, .album-card img {
     width: 100%;
-    max-height: 60%;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 2px;
+    object-fit: cover;
 }
 
 .artist-card h3, .album-card h3 {
@@ -216,7 +219,7 @@ main {
         margin-bottom: 10px;
     }
     .search-bar {
-        margin-top: 8px;
+        margin-top: 10px;
     }
     .nav-lang-button {
         align-self: flex-start;
@@ -224,4 +227,8 @@ main {
     .artists-grid, .albums-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
+
+    @media (max-width: 350px) {
+        .sidebar {
+            width: 100%;
 }
