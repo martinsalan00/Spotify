@@ -227,8 +227,16 @@ main {
     .artists-grid, .albums-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
+}
 
-    @media (max-width: 350px) {
-        .sidebar {
-            width: 100%;
+@media (max-width: 350px) {
+    .search-bar input {
+        max-width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+        margin-left: 5px;
+    }
 }
